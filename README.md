@@ -68,10 +68,18 @@ JWT-токен:
 
 # Запуск сервиса
 
-1. git clone ***git@github.com:bitcoineazy/infra_sp2.git***
-2. Создать файл .env со значениями: ***DB_ENGINE=django.db.backends.postgresql, DB_NAME=postgres, POSTGRES_USER=postgres, POSTGRES_PASSWORD=postgres, DB_HOST=db, DB_PORT=5432***
-3. Запустить Docker: ***sudo docker-compose up***
-4. Выполнить миграции внутри докера: ***sudo docker-compose exec web python manage.py makemigrations && sudo docker-compose exec web python manage.py migrate***
-5. Создать профиль администратора внутри докера: ***sudo docker-compose exec web python manage.py createsuperuser***
-6. Собрать всю статику внутри докера: ***sudo docker-compose exec web python manage.py collectstatic***
-7. Загрузка тестовых данных ***sudo docker-compose exec web python manage.py loaddata fixtures.json***
+1. ```git clone git@github.com:bitcoineazy/infra_sp2.git```
+2. Создать файл .env со значениями: 
+```
+DB_ENGINE=django.db.backends.postgresql,
+DB_NAME=postgres,
+POSTGRES_USER=postgres,
+POSTGRES_PASSWORD=postgres,
+DB_HOST=db,
+DB_PORT=5432
+```
+3. Запустить Docker: ```sudo docker-compose up```
+4. Выполнить миграции внутри докера: ```sudo docker-compose exec web python manage.py makemigrations && sudo docker-compose exec web python manage.py migrate```
+5. Создать профиль администратора внутри докера: ```sudo docker-compose exec web python manage.py createsuperuser```
+6. Собрать всю статику внутри докера: ```sudo docker-compose exec web python manage.py collectstatic```
+7. Загрузка тестовых данных ```sudo docker-compose exec web python manage.py loaddata fixtures.json```
