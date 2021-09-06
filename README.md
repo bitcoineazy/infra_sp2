@@ -83,3 +83,9 @@ DB_PORT=5432
 5. Создать профиль администратора внутри докера: ```sudo docker-compose exec web python manage.py createsuperuser```
 6. Собрать всю статику внутри докера: ```sudo docker-compose exec web python manage.py collectstatic```
 7. Загрузка тестовых данных ```sudo docker-compose exec web python manage.py loaddata fixtures.json```
+
+# Над проектом работали
+
++ [Матвей](https://github.com/bitcoineazy) - отзывы к произведением, комментарии
++ [Максим](https://github.com/Simkamak) - пользователи, аутентификация
++ [Павел](https://github.com/bitcoineazy) - произведения, жанры
