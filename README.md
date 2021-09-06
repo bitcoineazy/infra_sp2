@@ -88,4 +88,4 @@ DB_PORT=5432
 
 + [Матвей](https://github.com/bitcoineazy) - отзывы к произведением, комментарии
 + [Максим](https://github.com/Simkamak) - пользователи, аутентификация
-+ [Павел](https://github.com/bitcoineazy) - произведения, жанры
++ [Павел](https://github.com/plyneus) - произведения, жанры
